@@ -308,4 +308,43 @@ ADD CONSTRAINT `fk_order_delivery`
   REFERENCES `tmd_shop`.`delivery` (`id_order`)
   ON DELETE CASCADE
   ON UPDATE CASCADE;
-  
+
+DROP TABLE IF EXISTS `tmd_shop`.`store_employe`;
+CREATE TABLE `tmd_shop`.`store_employe` (
+  `Personnel_Number` INT NOT NULL,
+  `name` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
+  `position` VARCHAR(45) NOT NULL,
+  `phone` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`Personnel_Number`));
+
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (1, 'Templeton Giacomucci', 'tgiacomucci0@51.la', 'Systems Administrator I', '190-999-5563');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (2, 'Selma Ends', 'sends1@paginegialle.it', 'Information Systems Manager', '330-420-0288');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (3, 'Merci Colebourn', 'mcolebourn2@dailymail.co.uk', 'Programmer Analyst II', '305-962-0782');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (4, 'Sybille Morritt', 'smorritt3@dion.ne.jp', 'Information Systems Manager', '978-927-4056');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (5, 'Emmie Isakovitch', 'eisakovitch4@apple.com', 'Software Engineer III', '507-565-3458');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (6, 'Philippine Bayford', 'pbayford5@simplemachines.org', 'Biostatistician I', '434-757-7676');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (7, 'Edythe Sobtka', 'esobtka6@360.cn', 'Desktop Support Technician', '564-145-2201');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (8, 'Ingar Delgado', 'idelgado7@cornell.edu', 'VP Sales', '922-174-3957');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (9, 'Shannon Leyson', 'sleyson8@prlog.org', 'Developer II', '523-982-1477');
+insert into `tmd_shop`.`store_employe` (Personnel_Number, name, email, position, phone) values (10, 'Alisha Ewings', 'aewings9@cnn.com', 'Social Worker', '423-898-7410');
+
+ALTER TABLE `tmd_shop`.`delivery` 
+ADD INDEX `fk_delivery_store_emploe_idx` (`Personnel_Number` ASC) VISIBLE;
+;
+ALTER TABLE `tmd_shop`.`delivery` 
+ADD CONSTRAINT `fk_delivery_store_emploe`
+  FOREIGN KEY (`Personnel_Number`)
+  REFERENCES `tmd_shop`.`store_employe` (`Personnel_Number`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+ALTER TABLE `tmd_shop`.`order` 
+ADD INDEX `fk_order_store_employe_idx` (`Personnel_Number` ASC) VISIBLE;
+;
+ALTER TABLE `tmd_shop`.`order` 
+ADD CONSTRAINT `fk_order_store_employe`
+  FOREIGN KEY (`Personnel_Number`)
+  REFERENCES `tmd_shop`.`store_employe` (`Personnel_Number`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
