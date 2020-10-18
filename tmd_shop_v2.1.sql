@@ -7,22 +7,22 @@ DROP TABLE IF EXISTS `tmd_shop`.`supplier`;
 CREATE TABLE `tmd_shop`.`supplier` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `supplier_name` VARCHAR(45) NOT NULL,
-  `E-mail` VARCHAR(100) NOT NULL,
+  `Email` VARCHAR(100) NOT NULL,
   `Fax` VARCHAR(45) NOT NULL,
   `Phone` VARCHAR(45) NOT NULL,
   `Price_list` MEDIUMTEXT NULL,
   PRIMARY KEY (`id`));
 
-INSERT INTO `tmd_shop`.`supplier` (`id`, `supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('1', 'Electrolux', 'pamberson0@miitbeian.gov.cn', '462-950-5245', '301-592-4266', 'https://house.gov');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('LG', 'acollopy1@drupal.org', '862-454-7266', '300-921-4777', 'http://mayoclinic.com');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('Phillips', 'aglas2@nbcnews.com', '218-728-2478', '371-455-8631', 'http://yale.edu');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('Zanussi', 'jizatt3@wikispaces.com', '931-233-2454', '723-115-5008', 'http://amazon.de');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('Bocsh', 'ahathway4@spiegel.de', '372-953-9097', '793-367-5037', 'http://rambler.ru');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('Kio', 'sgoodlett5@qq.com', '490-970-5909', '513-443-3428', 'http://netvibes.com');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('Xiaomi', 'ljiroutek6@wikimedia.org', '987-237-4214', '442-447-3995', 'https://slideshare.net');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('Ariston', 'lburke7@businessinsider.com', '980-274-1535', '485-835-0181', 'https://phpbb.com');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('Dell', 'mpetts8@bravesites.com', '416-483-3958', '967-256-6215', 'http://geocities.jp');
-INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `E-mail`, `Fax`, `Phone`, `Price_list`) VALUES ('Asus', 'bannies9@slashdot.org', '910-402-1773', '107-797-0846', 'http://cnn.com');
+INSERT INTO `tmd_shop`.`supplier` (`id`, `supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('1', 'Electrolux', 'pamberson0@miitbeian.gov.cn', '462-950-5245', '301-592-4266', 'https://house.gov');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('LG', 'acollopy1@drupal.org', '862-454-7266', '300-921-4777', 'http://mayoclinic.com');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('Phillips', 'aglas2@nbcnews.com', '218-728-2478', '371-455-8631', 'http://yale.edu');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('Zanussi', 'jizatt3@wikispaces.com', '931-233-2454', '723-115-5008', 'http://amazon.de');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('Bocsh', 'ahathway4@spiegel.de', '372-953-9097', '793-367-5037', 'http://rambler.ru');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('Kio', 'sgoodlett5@qq.com', '490-970-5909', '513-443-3428', 'http://netvibes.com');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('Xiaomi', 'ljiroutek6@wikimedia.org', '987-237-4214', '442-447-3995', 'https://slideshare.net');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('Ariston', 'lburke7@businessinsider.com', '980-274-1535', '485-835-0181', 'https://phpbb.com');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('Dell', 'mpetts8@bravesites.com', '416-483-3958', '967-256-6215', 'http://geocities.jp');
+INSERT INTO `tmd_shop`.`supplier` (`supplier_name`, `Email`, `Fax`, `Phone`, `Price_list`) VALUES ('Asus', 'bannies9@slashdot.org', '910-402-1773', '107-797-0846', 'http://cnn.com');
 
 
 DROP TABLE IF EXISTS `tmd_shop`.`supplier_category`;
@@ -55,22 +55,22 @@ CREATE TABLE `tmd_shop`.`buyer` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `login` VARCHAR(45) NOT NULL,
   `password` VARCHAR(45) NOT NULL,
-  `e-mail` VARCHAR(100) NOT NULL,
+  `email` VARCHAR(100) NOT NULL,
   `name` VARCHAR(45) NOT NULL,
   `address` VARCHAR(200) NOT NULL,
   `birthday` DATE NOT NULL,
   PRIMARY KEY (`id`, `login`));
   
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (1, 'Winona', 'W2EeysN', 'wposkitt0@twitpic.com', 'Winona Poskitt', '22086 Iowa Lane', '1985-03-23');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (2, 'Effie', '5C3qd9ykgVY', 'estoven1@tripadvisor.com', 'Effie Stoven', '06038 Lakeland Parkway', '1956-09-23');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (3, 'Kattie', 'aALIaePQQ', 'knoller2@lycos.com', 'Kattie Noller', '1915 Larry Avenue', '1952-05-12');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (4, 'Wilt', 'wmbYXGloKou', 'wcastiglio3@ow.ly', 'Wilt Castiglio', '6 Comanche Trail', '1996-04-16');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (5, 'Grier', 'AR8HWCHbT', 'gantusch4@1688.com', 'Grier Antusch', '24079 Buhler Alley', '1970-05-11');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (6, 'Theodora', '2hGokEYr8DD', 'tcostell5@123-reg.co.uk', 'Theodora Costell', '979 Continental Lane', '1980-02-21');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (7, 'Corey', 'BzoPbQX', 'ccourse6@google.nl', 'Corey Course', '64 Grim Terrace', '1979-05-03');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (8, 'Nobe', 'XIrc2iJV', 'nlamplough7@foxnews.com', 'Nobe Lamplough', '33 Laurel Lane', '1999-07-01');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (9, 'Courtnay', 'gJFhsDOTQWl', 'cglendinning8@zdnet.com', 'Courtnay Glendinning', '6 Morning Avenue', '1969-09-25');
-INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `e-mail`, `name`, `address`, `birthday`) VALUES (10, 'Nevil', 'lO5AT41p', 'nboycott9@skype.com', 'Nevil Boycott', '24 Mockingbird Circle', '1994-06-03');  
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (1, 'Winona', 'W2EeysN', 'wposkitt0@twitpic.com', 'Winona Poskitt', '22086 Iowa Lane', '1985-03-23');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (2, 'Effie', '5C3qd9ykgVY', 'estoven1@tripadvisor.com', 'Effie Stoven', '06038 Lakeland Parkway', '1956-09-23');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (3, 'Kattie', 'aALIaePQQ', 'knoller2@lycos.com', 'Kattie Noller', '1915 Larry Avenue', '1952-05-12');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (4, 'Wilt', 'wmbYXGloKou', 'wcastiglio3@ow.ly', 'Wilt Castiglio', '6 Comanche Trail', '1996-04-16');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (5, 'Grier', 'AR8HWCHbT', 'gantusch4@1688.com', 'Grier Antusch', '24079 Buhler Alley', '1970-05-11');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (6, 'Theodora', '2hGokEYr8DD', 'tcostell5@123-reg.co.uk', 'Theodora Costell', '979 Continental Lane', '1980-02-21');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (7, 'Corey', 'BzoPbQX', 'ccourse6@google.nl', 'Corey Course', '64 Grim Terrace', '1979-05-03');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (8, 'Nobe', 'XIrc2iJV', 'nlamplough7@foxnews.com', 'Nobe Lamplough', '33 Laurel Lane', '1999-07-01');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (9, 'Courtnay', 'gJFhsDOTQWl', 'cglendinning8@zdnet.com', 'Courtnay Glendinning', '6 Morning Avenue', '1969-09-25');
+INSERT INTO `tmd_shop`.`buyer` (`id`, `login`, `password`, `email`, `name`, `address`, `birthday`) VALUES (10, 'Nevil', 'lO5AT41p', 'nboycott9@skype.com', 'Nevil Boycott', '24 Mockingbird Circle', '1994-06-03');  
 
 
 DROP TABLE IF EXISTS `tmd_shop`.`buyer_phone`;
@@ -150,6 +150,18 @@ INSERT INTO `tmd_shop`.`product` (`id_product_article`, `product_price`, `produc
 INSERT INTO `tmd_shop`.`product` (`id_product_article`, `product_price`, `product_weight`, `product_length`, `product_width`, `product_height`, `product_image`, `product_name`, `product_category`, `product_guarantee_months`, `product_description`) VALUES ('374622511608654', '6767.93', 96, 36, 81, 23, 'https://robohash.org/suntdoloribusquam.png?size=50x50&set=set1', 'Lamotrigine', 9, 44, 'c6deeb62c7cc02b0efe1788de2657c229c3ec1d5');
 INSERT INTO `tmd_shop`.`product` (`id_product_article`, `product_price`, `product_weight`, `product_length`, `product_width`, `product_height`, `product_image`, `product_name`, `product_category`, `product_guarantee_months`, `product_description`) VALUES('4041593939440', '2162.05', 77, 31, 13, 79, 'https://robohash.org/voluptatespariaturvoluptatem.png?size=50x50&set=set1', 'L-Dopa', 10, 38, 'c6deeb62c7cc02b0efe1788de2657c229c3ec1d5'); 
 
+
+ALTER TABLE `tmd_shop`.`product` 
+ADD INDEX `fk_product_supplier_idx` (`product_category` ASC) VISIBLE;
+;
+ALTER TABLE `tmd_shop`.`product` 
+ADD CONSTRAINT `fk_product_supplier`
+  FOREIGN KEY (`product_category`)
+  REFERENCES `tmd_shop`.`supplier_category` (`id`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
+
+
 DROP TABLE IF EXISTS `tmd_shop`.`product_evaluation`; 
 CREATE TABLE `tmd_shop`.`product_evaluation` (
   `id_product` BIGINT(50) NOT NULL,
@@ -177,6 +189,7 @@ DROP TABLE IF EXISTS `tmd_shop`.`order_product`;
 CREATE TABLE `tmd_shop`.`order_product` (
   `number_order` INT NOT NULL,
   `id_product` BIGINT(50) NOT NULL,
+  `count` INT NOT NULL,
   PRIMARY KEY (`number_order`, `id_product`),
   INDEX `fk_orderProduct_product_idx` (`id_product` ASC) VISIBLE,
   CONSTRAINT `fk_orderProduct_product`
@@ -185,12 +198,17 @@ CREATE TABLE `tmd_shop`.`order_product` (
     ON DELETE CASCADE
     ON UPDATE NO ACTION);
 
-INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`) VALUES ('1', '4017953472867');
-INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`) VALUES ('2', '4041593939440');
-INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`) VALUES ('3', '348490240566723');
-INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`) VALUES ('4', '374288179638530');
-INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`) VALUES ('5', '374622511608654');
 
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('1', '4017953472867', '2');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('2', '4041593939440', '1');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('3', '348490240566723', '3');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('4', '374288179638530', '2');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('5', '374622511608654', '1');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('6', '3543195644508893', '1');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('7', '4844014806496074', '1');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('8', '6762370103581650', '1');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('9', '6763511007867633', '1');
+INSERT INTO `tmd_shop`.`order_product` (`number_order`, `id_product`, `count`) VALUES ('10', '560222983762121475', '1');
 
 DROP TABLE IF EXISTS `tmd_shop`.`order`;
 CREATE TABLE `tmd_shop`.`order` (
@@ -225,6 +243,13 @@ ADD CONSTRAINT `fk_order_login_buyer_id`
   REFERENCES `tmd_shop`.`buyer` (`id`)
   ON DELETE NO ACTION
   ON UPDATE NO ACTION;
+  
+ALTER TABLE `tmd_shop`.`order` 
+ADD CONSTRAINT `fk_order_order_product`
+  FOREIGN KEY (`id_order`)
+  REFERENCES `tmd_shop`.`order_product` (`number_order`)
+  ON DELETE CASCADE
+  ON UPDATE CASCADE;
   
 DROP TABLE IF EXISTS `tmd_shop`.`point_of_delivery`;
 CREATE TABLE `tmd_shop`.`point_of_delivery` (
